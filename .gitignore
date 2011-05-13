@@ -1,0 +1,5 @@
+/plugin.xml
+/.settings
+/target
+/grails-force-response-download*.zip
+/web-app
