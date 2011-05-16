@@ -1,8 +1,8 @@
 class ForceResponseDownloadGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "0.1.1"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "1.2 > *"
+    def grailsVersion = "1.1 > *"
     // the other plugins this plugin depends on
     // the plugin depends on browser-detection plugin, but if I specify it here, grails looks for browserdetection plugin (removes '-') 
     // and it does not find it. Thus, only dependency in BuildConfig remains...
@@ -17,6 +17,10 @@ class ForceResponseDownloadGrailsPlugin {
     def author = "Predrag Knezevic"
     def authorEmail = "pedjak@gmail.com"
     def title = "Force Downloading Controller's Response in Browser"
+    
+    def license = "APACHE"
+    
+    def scm = "http://github.com/pedjak/grails-force-response-download"
     
     def description = '''\\
 The plugin forces browser to open a dialog for downloading content produced within controller's action. 
@@ -33,6 +37,8 @@ and a object containing content:
 * contentLength is optional, but recommended to have - browsers will be able to show proper progress while downloading. 
   If not explicitely specified, it can be read from content object, if it implements size() method
 * content - optional. If omitted then controller's code must write to response stream or render response manually using standard Grails approaches
+
+The source code is available at http://github.com/pedjak/grails-force-response-download
 '''
 
     // URL to the plugin's documentation
