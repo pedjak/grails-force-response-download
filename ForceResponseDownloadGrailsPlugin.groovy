@@ -6,7 +6,7 @@ class ForceResponseDownloadGrailsPlugin {
     // the other plugins this plugin depends on
     // the plugin depends on browser-detection plugin, but if I specify it here, grails looks for browserdetection plugin (removes '-') 
     // and it does not find it. Thus, only dependency in BuildConfig remains...
-    //def dependsOn = ["browser-detection":'0.1']
+    def dependsOn = ["browserDetection":'0.1']
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp",
