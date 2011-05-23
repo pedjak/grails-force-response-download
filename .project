@@ -26,7 +26,7 @@
 		<link>
 			<name>.link_to_grails_plugins</name>
 			<type>2</type>
-			<locationURI>GRAILS_ROOT/1.3.5/projects/grails-force-response-download/plugins</locationURI>
+			<locationURI>GRAILS_ROOT/1.3.7/projects/grails-force-response-download/plugins</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

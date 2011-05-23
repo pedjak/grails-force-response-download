@@ -4,8 +4,6 @@ class ForceResponseDownloadGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.1 > *"
     // the other plugins this plugin depends on
-    // the plugin depends on browser-detection plugin, but if I specify it here, grails looks for browserdetection plugin (removes '-') 
-    // and it does not find it. Thus, only dependency in BuildConfig remains...
     def dependsOn = ["browserDetection":'0.1']
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
@@ -20,7 +18,7 @@ class ForceResponseDownloadGrailsPlugin {
     
     def license = "APACHE"
     
-    def scm = "http://github.com/pedjak/grails-force-response-download"
+    def scm = [url: "http://github.com/pedjak/grails-force-response-download"]
     
     def description = '''\\
 The plugin forces browser to open a dialog for downloading content produced within controller's action. 
