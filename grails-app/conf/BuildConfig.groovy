@@ -25,7 +25,7 @@ grails.project.dependency.resolution = {
     }
     
     plugins {
-        runtime 'org.grails.plugins:browser-detection:0.1'
+        runtime 'org.grails.plugins:browser-detection:0.2'
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
