@@ -26,9 +26,9 @@ that there are special situations (ofcourse) with IE that has to be handled prop
 Controllers are extended with forceDownload method that takes as parameters a Map specifying download options, 
 and a object containing content:
 
-    forceDownload(file:"file", contentType:"application/octet-stream", contentLength: 123, content)
+    forceDownload(filename:"file", contentType:"application/octet-stream", contentLength: 123, content)
 
-* file specifies the name that will be presented in browser download dialog, if omitted the default value is 'file'
+* filename specifies the name that will be presented in browser download dialog, if omitted the default value is 'file'
 * contentType is MIME content type that will be sent to browser for the given content, if omitted the default value is application/octet-stream
 * contentLength is optional, but recommended to have - browsers will be able to show proper progress while downloading. 
   If not explicitely specified, it can be read from content object, if it implements size() method
