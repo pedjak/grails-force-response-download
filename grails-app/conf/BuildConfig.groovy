@@ -25,8 +25,8 @@ grails.project.dependency.resolution = {
     }
     
     plugins {
-        runtime ':browser-detection:0.4.1'
- 	build ":release:2.2.0", {
+        runtime ':browser-detection:0.4.3'
+ 	    build ":release:2.2.0", {
             export = false
         }
 
